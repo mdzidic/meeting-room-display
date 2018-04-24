@@ -15,6 +15,27 @@ We wanted to build a small app to prevent the interruption of meetings, you hear
  
 ![The application in use](docs/photo.jpg)
 
+## Installation
+
+Install RVM (if You don't have it already)
+```
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+source ~/.rvm/scripts/rvm
+rvm install "ruby-2.3.1"
+gem install bundler rake
+```
+Build application
+```
+bundler install
+gem install meeting-room-display
+```
+
+Start application
+```
+meeting-room-display
+```
+
 ## FAQ:
 
 Q: The list does not show the calendars of meeting room X
